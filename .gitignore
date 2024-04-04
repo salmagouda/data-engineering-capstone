@@ -156,6 +156,8 @@ docker-compose.override.yml
 # Terraform files
 **/.terraform*
 *.tfstate*
+*.tfstate.*
+**.terraform.lock.*
 *.zip
 
 # vscode
@@ -169,3 +171,14 @@ node_modules
 scratch*
 /mage_data*
 *.json
+
+
+.idea
+**google_credentials.json
+**my-creds.json
+**logs/
+.history
+serving_dir
+**/data/*
+**/tmp/*
+**/lib/*
