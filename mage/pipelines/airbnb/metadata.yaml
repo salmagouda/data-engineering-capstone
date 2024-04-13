@@ -1,0 +1,255 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - export_listings_gcs
+  - export_listings_gbq
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_listings_api
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_listings_api
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider_profile: default
+    export_write_policy: append
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: export_listings_gcs
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_listings_api
+  uuid: export_listings_gcs
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - listings_gcp_partitioned
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: export_listings_gbq
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_listings_api
+  uuid: export_listings_gbq
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: bigquery
+    data_provider_database: airbnb-de-project
+    data_provider_profile: default
+    data_provider_schema: airbnb_dw
+    data_provider_table: listings_partitioned
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: replace
+    limit: 0
+    use_raw_sql: true
+  downstream_blocks:
+  - transform_listings
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: listings_gcp_partitioned
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - export_listings_gbq
+  uuid: listings_gcp_partitioned
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: bigquery
+    data_provider_database: airbnb-de-project
+    data_provider_profile: default
+    data_provider_schema: airbnb_dw
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: replace
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - join_airbnb_data
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: transform_listings
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - listings_gcp_partitioned
+  uuid: transform_listings
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: bigquery
+    data_provider_database: airbnb-de-project
+    data_provider_profile: default
+    data_provider_schema: airbnb_dw
+    export_write_policy: replace
+  downstream_blocks:
+  - export_reviews_gcs
+  - export_reviews_gbq
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_reviews_api
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_reviews_api
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: export_reviews_gcs
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_reviews_api
+  uuid: export_reviews_gcs
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - reviews_gcp_partitioned
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: export_reviews_gbq
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_reviews_api
+  uuid: export_reviews_gbq
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: bigquery
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - transform_reviews
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: reviews_gcp_partitioned
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - export_reviews_gbq
+  uuid: reviews_gcp_partitioned
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: bigquery
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: transform_reviews
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - reviews_gcp_partitioned
+  uuid: transform_reviews
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: bigquery
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: join_airbnb_data
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - transform_listings
+  uuid: join_airbnb_data
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2024-04-11 10:24:28.147943+00:00'
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: airbnb
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: airbnb
+variables_dir: /home/src/mage_data/airbnb_data_engineering
+widgets: []

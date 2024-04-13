@@ -1,7 +1,7 @@
 version: '3'
 services:
   magic:
-    image: mageai/mageai:latest
+    image: mageai/mageai:alpha
     command: mage start ${PROJECT_NAME}
     env_file:
       - .env
