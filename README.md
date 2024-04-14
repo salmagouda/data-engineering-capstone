@@ -14,6 +14,10 @@
 The goal of this project is to apply everything we have learned
 in this de zoomcamp to build an end-to-end data pipeline.
 
+### Project Demo
+
+<img src="project_images/project.png" />
+
 
 ## Problem description
 
