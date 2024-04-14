@@ -3,6 +3,7 @@
 
 - [Problem description](#problem-description)
 - [Data Sources](#data-sources)
+- [Data Pipeline](#data-pipeline)
 - [Technologies Used](#technologies-used)
 - [Evaluation Criteria ](#evaluation-criteria)
 
@@ -23,6 +24,31 @@ As an aspiring data engineer, my task was to design and implement an end-to-end 
 Airbnb data for 250,000+ listings in 10 major cities, including information about hosts, pricing, location, and room type, along with over 5 million historical reviews obtained from [Maven Analytics Data Playground](https://mavenanalytics.io/data-playground?search=airbnb) and ingested through an API for each.
 
 ## Data Pipeline 
+
+![alt text](<mage airbnb pipeline.jpg>)
+
+My pipeline fetches the data from APIs, loads it to Google Cloud Storage, then doing the unnecessary transformations and load it again to Google BigQuery.
+
+All steps are orchestrated in [Mage](https://docs.mage.ai/introduction/overview).
+
+### Data Lake
+
+set using terraform to be used in the pipeline.
+
+![alt text](<gc gcs_data_lake.jpg>)
+
+### Data Warehouse
+
+set using terraform to be used in the pipeline.
+
+![alt text](<gc gbq_dw.jpg>)
+
+### Pipeline Automation
+
+After setting up my pipline, I made a monthly trigger to run it and collect new data (if exists)
+
+![alt text](<mage airbnb_trigger.jpg>)
+![alt text](<mage airbnb_active.jpg>)
 
 ## Dashboard
 
