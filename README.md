@@ -4,6 +4,7 @@
 - [Problem description](#problem-description)
 - [Data Sources](#data-sources)
 - [Data Pipeline](#data-pipeline)
+- [Dashboard](#dashboard)
 - [Technologies Used](#technologies-used)
 - [Evaluation Criteria ](#evaluation-criteria)
 
@@ -59,6 +60,18 @@ After setting up my pipline, I made a monthly trigger to run it and collect new 
 
 ## Dashboard
 
+I used [Google looker studio](https://lookerstudio.google.com/navigation/reporting) to visualize my data.
+
+![alt text](<final dashboard.jpg>)
+
+The dashboard ansewrs those main questions:
+
+* Which citied has the best reviews?
+* What are the trends of Guests, Hosts, Lists, and Prices over the years?
+* Which cities has more guests?
+* What are the preferred room types?
+* How does host identity verification affect guest attractions?
+
 ## Technologies Used
 
 * **Cloud**: GCP
@@ -69,7 +82,7 @@ After setting up my pipline, I made a monthly trigger to run it and collect new 
 * **Data Warehouse**: BigQuery
 * **Visualization**: Google Looker Studio
 
-
+## Reproducibility
 
 ## Evaluation Criteria 
 
