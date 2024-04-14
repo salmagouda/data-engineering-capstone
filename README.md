@@ -29,8 +29,8 @@ Expected Outcomes:
 
 ## Data Sources
 
-![alt text](image.png)
-![alt text](image-1.png)
+<img src="project_images/maven.png" />
+<img src="project_images/airbnb.png" />
 
 Airbnb data for 250,000+ listings in 10 major cities, including information about hosts, pricing, location, and room type, along with over 5 million historical reviews obtained from [Maven Analytics Data Playground](https://mavenanalytics.io/data-playground?search=airbnb) and ingested through an API for each.
 
@@ -215,7 +215,7 @@ When you are done, in a google bucket you should have two CSV files and in  BigQ
 
 ## Evaluation Criteria 
 
-My self evaluation for the project.
+My self evaluation for the project:
 
 * Problem description
     * 4 points: Problem is well described and it's clear what the problem the project solves
