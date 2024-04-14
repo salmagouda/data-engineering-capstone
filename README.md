@@ -16,7 +16,7 @@ in this de zoomcamp to build an end-to-end data pipeline.
 
 ### Project Demo
 
-<img src="project_images/project.png" />
+<img src="project_images/project.jpg" />
 
 
 ## Problem description
