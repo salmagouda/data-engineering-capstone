@@ -2,6 +2,7 @@
 # Airbnb Project
 
 - [Problem description](#problem-description)
+- [Technologies Used](#technologies-used)
 
 ### Objective
 
@@ -9,15 +10,14 @@ The goal of this project is to apply everything we have learned
 in this de zoomcamp to build an end-to-end data pipeline.
 
 ## Problem description
-Problem is well described and it's clear what the problem the project solves
 
-
+As an aspiring data engineer, my task was to design and implement an end-to-end data engineering pipeline and dashboard for managing Airbnb listings and reviews data. The goal is to collect, transform, store, analyze, and visualize data from Airbnb's listings and reviews to provide actionable insights.
 
 
 
 ## Data Pipeline 
 
-
+## Dashboard
 
 ## Technologies Used
 
@@ -28,16 +28,6 @@ Problem is well described and it's clear what the problem the project solves
 * **Data Lake**: Google Cloud Storage
 * **Data Warehouse**: BigQuery
 * **Visualization**: Google Looker Studio
-
-
-
-
-
-## Dashboard
-
-
- 
-
 
 
 
