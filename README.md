@@ -1,11 +1,16 @@
-## Data Engineering Zoomcamp Capstone Project
+# Data Engineering Zoomcamp Capstone Project
+# Airbnb Project
+
+- [Problem description](#problem-description)
 
 ### Objective
 
 The goal of this project is to apply everything we have learned
 in this de zoomcamp to build an end-to-end data pipeline.
 
-### Problem description
+## Problem description
+Problem is well described and it's clear what the problem the project solves
+
 
 
 
@@ -14,8 +19,15 @@ in this de zoomcamp to build an end-to-end data pipeline.
 
 
 
-## Technologies 
+## Technologies Used
 
+* **Cloud**: GCP
+* **Infrastructure as code (IaC)**: Terraform
+* **Containarization**: Docker
+* **Workflow orchestration**: Mage
+* **Data Lake**: Google Cloud Storage
+* **Data Warehouse**: BigQuery
+* **Visualization**: Google Looker Studio
 
 
 

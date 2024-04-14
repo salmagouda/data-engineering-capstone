@@ -172,3 +172,4 @@ scratch*
 *secrets*.json
 *.json
 /keys*
+/airbnb data*
