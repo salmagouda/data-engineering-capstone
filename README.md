@@ -215,7 +215,7 @@ When you are done, in a google bucket you should have two CSV files and in  BigQ
 
 ## Evaluation Criteria 
 
-My self evaluation for the project.
+My self evaluation for the project:
 
 * Problem description
     * 4 points: Problem is well described and it's clear what the problem the project solves
