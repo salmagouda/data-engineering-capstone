@@ -16,6 +16,13 @@ in this de zoomcamp to build an end-to-end data pipeline.
 
 As an aspiring data engineer, my task was to design and implement an end-to-end data engineering pipeline and dashboard for managing Airbnb listings and reviews data. The goal is to collect, transform, store, analyze, and visualize data from Airbnb's listings and reviews to provide actionable insights.
 
+Expected Outcomes:
+
+* A robust and scalable data engineering pipeline capable of handling large volumes of Airbnb listings and reviews data.
+* Increased efficiency and productivity through automation of data pipeline workflows.
+* Actionable insights and visualizations derived from the data to support business decision-making.
+* Enhanced understanding of data engineering best practices, tools, and technologies.
+
 ## Data Sources
 
 ![alt text](image.png)
@@ -33,13 +40,13 @@ All steps are orchestrated in [Mage](https://docs.mage.ai/introduction/overview)
 
 ### Data Lake
 
-set using terraform to be used in the pipeline.
+set using terraform to be used in the pipeline as data storage.
 
 ![alt text](<gc gcs_data_lake.jpg>)
 
 ### Data Warehouse
 
-set using terraform to be used in the pipeline.
+set using terraform to be used in the pipeline for data analytics.
 
 ![alt text](<gc gbq_dw.jpg>)
 
