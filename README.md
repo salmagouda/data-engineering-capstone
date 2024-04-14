@@ -2,7 +2,9 @@
 # Airbnb Project
 
 - [Problem description](#problem-description)
+- [Data Sources](#data-sources)
 - [Technologies Used](#technologies-used)
+- [Evaluation Criteria ](#evaluation-criteria)
 
 ### Objective
 
@@ -13,7 +15,9 @@ in this de zoomcamp to build an end-to-end data pipeline.
 
 As an aspiring data engineer, my task was to design and implement an end-to-end data engineering pipeline and dashboard for managing Airbnb listings and reviews data. The goal is to collect, transform, store, analyze, and visualize data from Airbnb's listings and reviews to provide actionable insights.
 
+## Data Sources
 
+Airbnb data for 250,000+ listings in 10 major cities, including information about hosts, pricing, location, and room type, along with over 5 million historical reviews obtained from [Maven Analytics Data Playground](https://mavenanalytics.io/data-playground?search=airbnb) and ingested through an API for each.
 
 ## Data Pipeline 
 
@@ -31,7 +35,9 @@ As an aspiring data engineer, my task was to design and implement an end-to-end 
 
 
 
-## Evaluation Criteria (Self Evaluation)
+## Evaluation Criteria 
+
+My self evaluation for the project.
 
 * Problem description
     * 4 points: Problem is well described and it's clear what the problem the project solves
