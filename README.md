@@ -37,7 +37,7 @@ Airbnb data for 250,000+ listings in 10 major cities, including information abou
 
 ## Data Pipeline 
 
-![alt text](<mage airbnb pipeline.jpg>)
+<img src="project_images/mage airbnb pipeline.jpg" />
 
 My pipeline fetches the data from APIs, loads it to Google Cloud Storage, then doing the unnecessary transformations and load it again to Google BigQuery.
 
@@ -47,27 +47,27 @@ All steps are orchestrated in [Mage](https://docs.mage.ai/introduction/overview)
 
 set using terraform to be used in the pipeline as data storage.
 
-![alt text](<gc gcs_data_lake.jpg>)
+<img src="project_images/gc gcs_data_lake.jpg" />
 
 ### Data Warehouse
 
 set using terraform to be used in the pipeline for data analytics.
 
-![alt text](<gc gbq_dw.jpg>)
+<img src="project_images/gc gbq_dw.jpg" />
 
 ### Pipeline Automation
 
 After setting up my pipline, I made a monthly trigger to run it and collect new data (if exists)
 
-![alt text](<mage airbnb_trigger.jpg>)
-![alt text](<mage airbnb_active.jpg>)
+<img src="project_images/mage airbnb_trigger.jpg" />
+<img src="project_images/mage airbnb_active.jpg" />
 
 
 ## Dashboard
 
 I used [Google looker studio](https://lookerstudio.google.com/navigation/reporting) to visualize my data.
 
-![alt text](<final dashboard.jpg>)
+<img src="project_images/final dashboard.jpg" />
 
 The dashboard ansewrs those main questions:
 
