@@ -17,6 +17,9 @@ As an aspiring data engineer, my task was to design and implement an end-to-end 
 
 ## Data Sources
 
+![alt text](image.png)
+![alt text](image-1.png)
+
 Airbnb data for 250,000+ listings in 10 major cities, including information about hosts, pricing, location, and room type, along with over 5 million historical reviews obtained from [Maven Analytics Data Playground](https://mavenanalytics.io/data-playground?search=airbnb) and ingested through an API for each.
 
 ## Data Pipeline 
