@@ -161,7 +161,7 @@ terraform apply
 ```bash
 terraform destroy
 ```
-**IMPORTANT**: This line uses when you are done with the whole project.
+**IMPORTANT**: This line is used when you are done with the whole project.
 
 7. `cd` into the mage directory
 8. Rename `dev.env` to simply `.env`.
@@ -208,6 +208,8 @@ This repository should have the following structure:
 ```
 
 When you are done, in a google bucket you should have two CSV files and in  BigQuery you should have all tables. 
+
+**Note**: for running spark and pyspark script I used, you need to follow along [Week 5 tutorials](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/05-batch) used for setup and adjust the script accordingly.
 
 ### Creating Visualisations
 
