@@ -12,11 +12,13 @@
 ### Objective
 
 The goal of this project is to apply everything we have learned
-in this de zoomcamp to build an end-to-end data pipeline.
+in this [Data Engineering Zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp) to build an end-to-end data pipeline.
+
+Also, feel free to browse my work during the camp [here](https://github.com/salmagouda/data-engineering-dilemma).
 
 ### Project Demo
 
-<img src="project_images/project.jpg" />
+<img src="project_images/project.png" />
 
 
 ## Problem description
