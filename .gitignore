@@ -182,6 +182,5 @@ serving_dir
 **/data/*
 **/tmp/*
 **/lib/*
-spark
 
 #airbnb
