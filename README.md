@@ -92,6 +92,7 @@ The dashboard ansewrs those main questions:
 * **Workflow orchestration**: Mage
 * **Data Lake**: Google Cloud Storage
 * **Data Warehouse**: BigQuery
+* **Transformation**: Mage, Spark, Pyspark
 * **Visualization**: Google Looker Studio
 
 
@@ -233,7 +234,7 @@ My self evaluation for the project:
 * Data warehouse
     * 4 points: Tables are partitioned and clustered in a way that makes sense for the upstream queries (with explanation)
 * Transformations (dbt, spark, etc)
-    * 2 points: Simple SQL transformation (no dbt or similar tools) - done using mage 
+    * 4 points: Tranformations are defined with dbt, Spark or similar technologies 
 * Dashboard
     * 4 points: A dashboard with 2 tiles
 * Reproducibility
